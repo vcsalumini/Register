@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form</title>
+</head>
+<head>
+    <style>
+        body{
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-image: url(vvcs.jpg);
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            height: 100vh;
+            display:flex;
+            justify-content: center;
+            align-items: center;
+        }
+        label{
+            display: block;
+            margin-bottom:10px ;
+        }
+        div{
+            background-color: rgba(255,255, 255,0.77);
+            border-radius: 10px;
+            padding:50px;
+            width:400px;
+        }
+        input[type="text"],input[type="email"],input[type="password"] ,select,textarea{
+            width:100%;
+            padding:10px;
+            border:none;
+            border-radius: 5px;
+        }
+        input[type="submit"],input[type="reset"]{
+            background-color: rgba(255,83,18,0.746);
+            color:white;
+            padding:10px 20px;
+            border-radius:20px;
+            border:none;
+            transition: 0.5s;
+        }
+        input:focus, textarea:focus, select:focus{
+            background-color: antiquewhite;
+        }
+        input[type="submit"]:hover,
+        input[type="reset"]:hover{
+            background-color: rgba(255,82, 9,0.837);
+            transform:scale(1.05);
+            cursor:pointer;
+        }
+        h2{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <form action=" " method="post">
+            <h2>Welcome to vivekananda school alumini!</h2>
+            <lable for="name">Name</lable>
+            <input type="text" placeholder="first and last name" id="name" name="name"><br>
+            <lable for="email" >Email:</lable>
+            <input type="email" id="email" name="email">
+            <lable for="cities">Select city:</lable>
+            <select name="cities" id="cities">
+                <option value="pulivendula">pulivendula</option>
+                <option value="kadapa">kadapa</option>
+                <option value="nallapareddy palli">nalapareddy palli</option>
+                <option value="ananthapur">ananthapur</option>
+                <option value="kadiri">kadiri</option>
+            </select><br>
+            <lable for="Address">Address:</lable>
+            <textarea name="" id="Address" cols="30" rows="5" name="Addres"></textarea><br>
+            <lable for="gender">Gender</lable>
+            <input type="radio" value="male" name="gender">male
+            <input type="radio" value="female" name="gender">female
+            <input type="radio" value="others" name="gender">others
+            <br>
+            <lable for="password">password</lable>
+            <input type="password" name="password"><br>
+            <lable for="upload">Upload file:</lable>
+            <input type="file" name="file"><br><br>
+            <input type="submit" value="submit form">
+           </form>
+    </div>
+</body>
